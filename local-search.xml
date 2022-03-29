@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>test</title>
+    <link href="/2022/03/29/test/"/>
+    <url>/2022/03/29/test/</url>
+    
+    <content type="html"><![CDATA[<p>测试图片<br><img src="/download.jpg" alt="iu图片引用"></p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Hello World</title>
     <link href="/2022/03/29/hello-world/"/>
     <url>/2022/03/29/hello-world/</url>

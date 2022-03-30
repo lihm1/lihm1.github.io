@@ -16,23 +16,23 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="参考https:&#x2F;&#x2F;fluid-dev.github.io&#x2F;hexo-fluid-docs&#x2F;guide&#x2F;#%E5%88%86%E7%B1%BB%E9%A1%B5https:&#x2F;&#x2F;blog.csdn.net&#x2F;yaorongke&#x2F;article&#x2F;details&#x2F;119089190 1.安装Node.js官网下载最新版https:&#x2F;&#x2F;nodejs.org&#x2F;en&#x2F;最后安装好之后,打开命令提示符，输入node">
+    <meta name="description" content="perl 循环用法while12345my $i &#x3D; 0;  while($i &lt; scalar @array) &amp;#123;      print $i, &quot;: &quot;, $array[$i];      $i++;  &amp;#125;  举例： 123456@tt &#x3D; 5..9 ;my $i &#x3D; 0;  while($i &lt; scalar @tt) &amp;#123;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hello hexo">
-<meta property="og:url" content="http://example.com/2022/03/29/hello-hexo/index.html">
+<meta property="og:title" content="perl_for">
+<meta property="og:url" content="http://example.com/2022/03/30/perl-for/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="参考https:&#x2F;&#x2F;fluid-dev.github.io&#x2F;hexo-fluid-docs&#x2F;guide&#x2F;#%E5%88%86%E7%B1%BB%E9%A1%B5https:&#x2F;&#x2F;blog.csdn.net&#x2F;yaorongke&#x2F;article&#x2F;details&#x2F;119089190 1.安装Node.js官网下载最新版https:&#x2F;&#x2F;nodejs.org&#x2F;en&#x2F;最后安装好之后,打开命令提示符，输入node">
+<meta property="og:description" content="perl 循环用法while12345my $i &#x3D; 0;  while($i &lt; scalar @array) &amp;#123;      print $i, &quot;: &quot;, $array[$i];      $i++;  &amp;#125;  举例： 123456@tt &#x3D; 5..9 ;my $i &#x3D; 0;  while($i &lt; scalar @tt) &amp;#123;">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/img/download3.jpg">
-<meta property="article:published_time" content="2022-03-29T07:23:35.000Z">
-<meta property="article:modified_time" content="2022-03-30T01:10:34.983Z">
+<meta property="og:image" content="http://example.com/img/pic3.jpg">
+<meta property="article:published_time" content="2022-03-30T02:58:22.000Z">
+<meta property="article:modified_time" content="2022-03-30T03:11:00.009Z">
 <meta property="article:author" content="John Doe">
-<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="study">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/img/download3.jpg">
+<meta name="twitter:image" content="http://example.com/img/pic3.jpg">
   
   
-  <title>hello hexo - Hexo</title>
+  <title>perl_for - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -189,7 +189,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="hello hexo"></span>
+            <span id="subtitle" data-typed-text="perl_for"></span>
           
         </div>
 
@@ -200,8 +200,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-03-29 15:23" pubdate>
-          March 29, 2022 pm
+        <time datetime="2022-03-30 10:58" pubdate>
+          March 30, 2022 am
         </time>
       </span>
     
@@ -212,7 +212,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.9k words
+          1.9k words
         
       </span>
     
@@ -223,7 +223,7 @@
         
         
         
-          24 mins
+          17 mins
         
       </span>
     
@@ -261,54 +261,36 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">hello hexo</h1>
+            <h1 style="display: none">perl_for</h1>
             
             <div class="markdown-body">
               
-              <p>参考<br><a target="_blank" rel="noopener" href="https://fluid-dev.github.io/hexo-fluid-docs/guide/#%E5%88%86%E7%B1%BB%E9%A1%B5">https://fluid-dev.github.io/hexo-fluid-docs/guide/#%E5%88%86%E7%B1%BB%E9%A1%B5</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/yaorongke/article/details/119089190">https://blog.csdn.net/yaorongke/article/details/119089190</a></p>
-<h3 id="1-安装Node-js"><a href="#1-安装Node-js" class="headerlink" title="1.安装Node.js"></a>1.安装Node.js</h3><p>官网下载最新版<br><a target="_blank" rel="noopener" href="https://nodejs.org/en/">https://nodejs.org/en/</a><br>最后安装好之后,打开命令提示符，输入node -v和npm -v，出现版本号就成功了。</p>
-<h3 id="2-添加国内镜像源"><a href="#2-添加国内镜像源" class="headerlink" title="2.添加国内镜像源"></a>2.添加国内镜像源</h3><p>如果没有梯子的话，可以使用阿里的国内镜像进行加速。<br>npm config set registry <a target="_blank" rel="noopener" href="https://registry.npm.taobao.org/">https://registry.npm.taobao.org</a></p>
-<h3 id="3-安装hexo"><a href="#3-安装hexo" class="headerlink" title="3.安装hexo"></a>3.安装hexo</h3><p>输入npm install -g hexo-cli  安装hexo<br>输入 hexo -h 检查是否安装成功</p>
-<h3 id="4-新建文件夹blog"><a href="#4-新建文件夹blog" class="headerlink" title="4.新建文件夹blog"></a>4.新建文件夹blog</h3><p>进入我们新建的文件夹，初始化文件夹 hexo init</p>
-<img src="/2022/03/29/hello-hexo/one.png" srcset="/img/loading.gif" lazyload class="" title="This is an example image">
-<p>我们会得到相应的hexo搭建博客的文件：</p>
-<img src="/2022/03/29/hello-hexo/two.png" srcset="/img/loading.gif" lazyload class="" title="This is an example image">
-<h3 id="5-新建博客"><a href="#5-新建博客" class="headerlink" title="5.新建博客"></a>5.新建博客</h3><p>hexo new post “your blog name”<br>打开文件夹的source&#x2F;_posts &#x2F; 里面包含自己的博客的md文件</p>
-<h3 id="6-生成博客静态网址"><a href="#6-生成博客静态网址" class="headerlink" title="6.生成博客静态网址"></a>6.生成博客静态网址</h3><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo g </span><br><span class="hljs-attribute">hexo s</span><br></code></pre></td></tr></table></figure>
-<img src="/2022/03/29/hello-hexo/three.png" srcset="/img/loading.gif" lazyload class="" title="This is an example image">
-<img src="/2022/03/29/hello-hexo/four.png" srcset="/img/loading.gif" lazyload class="" title="This is an example image">
-<p>输入网址就可以看到自己的博客了</p>
-<h3 id="7-博客的主题修改"><a href="#7-博客的主题修改" class="headerlink" title="7.博客的主题修改"></a>7.博客的主题修改</h3><p>搜索自己喜欢的主题，将主题下载到blog&#x2F;themes 文件夹下。并将文件名修改为主题名。<br>下面以fluid的主题为例：<br>最新版本下载地址为：<a target="_blank" rel="noopener" href="https://github.com/fluid-dev/hexo-theme-fluid/releases">https://github.com/fluid-dev/hexo-theme-fluid/releases</a><br>下载后解压，并重命名为fluid。<br>在hexo&#x2F;blog&#x2F;_config.yml 修改自己的主题<br>#Extensions<br>##Plugins: <a target="_blank" rel="noopener" href="https://hexo.io/plugins/">https://hexo.io/plugins/</a><br>##Themes: <a target="_blank" rel="noopener" href="https://hexo.io/themes/">https://hexo.io/themes/</a><br>theme: fluid</p>
-<p>查看博客能否生成：</p>
-<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo s</span><br></code></pre></td></tr></table></figure>
-<p>此时博客的样子：</p>
-<img src="/2022/03/29/hello-hexo/five.png" srcset="/img/loading.gif" lazyload class="" title="This is an example image">
-<h3 id="8-个性化博客主题"><a href="#8-个性化博客主题" class="headerlink" title="8.个性化博客主题"></a>8.个性化博客主题</h3><h4 id="8-1写文章的时候生成文件夹保存图片"><a href="#8-1写文章的时候生成文件夹保存图片" class="headerlink" title="8.1写文章的时候生成文件夹保存图片"></a>8.1写文章的时候生成文件夹保存图片</h4><p>将_config.yml里面的post_asset_folder改为true。<br>post_asset_folder: true</p>
-<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs haxe">hexo <span class="hljs-keyword">new</span> <span class="hljs-type">post</span> <span class="hljs-string">&quot;test&quot;</span><br></code></pre></td></tr></table></figure>
-<img src="/2022/03/29/hello-hexo/six.png" srcset="/img/loading.gif" lazyload class="" title="This is an example image">
-<p>我们可以下载一张图片放入test文件夹里面，如何在文中引用，请参照<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/asset-folders.html">https://hexo.io/zh-cn/docs/asset-folders.html</a><br>在test.md中加入下载的图片其中一种方法如下所示：</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">test</span><br><span class="hljs-attr">date:</span> <span class="hljs-number">2022-03-29 15:23:35</span><br><span class="hljs-attr">tags:</span><br><span class="hljs-meta">---</span><br><span class="hljs-string">测试图片</span><br>&#123;<span class="hljs-string">%</span> <span class="hljs-string">asset_img</span> <span class="hljs-string">download.jpg</span> <span class="hljs-string">This</span> <span class="hljs-string">is</span> <span class="hljs-string">an</span> <span class="hljs-string">example</span> <span class="hljs-string">image</span> <span class="hljs-string">%</span>&#125;<br></code></pre></td></tr></table></figure>
-<p>提交修改后再次打开我们的博客可以看到：</p>
+              <h3 id="perl-循环用法"><a href="#perl-循环用法" class="headerlink" title="perl 循环用法"></a>perl 循环用法</h3><h4 id="while"><a href="#while" class="headerlink" title="while"></a>while</h4><figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs perl"><span class="hljs-keyword">my</span> $i = <span class="hljs-number">0</span>;  <br><span class="hljs-keyword">while</span>($i &lt; <span class="hljs-keyword">scalar</span> @array) &#123;  <br>    <span class="hljs-keyword">print</span> $i, <span class="hljs-string">&quot;: &quot;</span>, $array[$i];  <br>    $i++;  <br>&#125; <br></code></pre></td></tr></table></figure>
+<p>举例：</p>
+<figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs perl">@tt = <span class="hljs-number">5</span>..<span class="hljs-number">9</span> ;<br><span class="hljs-keyword">my</span> $i = <span class="hljs-number">0</span>;  <br><span class="hljs-keyword">while</span>($i &lt; <span class="hljs-keyword">scalar</span> @tt) &#123;  <br>    <span class="hljs-keyword">print</span> $i, <span class="hljs-string">&quot; : &quot;</span>, <span class="hljs-string">&quot;$tt[$i]\n&quot;</span>;  <br>    $i++;  <br>&#125; <br></code></pre></td></tr></table></figure>
+<h4 id="until"><a href="#until" class="headerlink" title="until"></a>until</h4><figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs perl"><span class="hljs-keyword">my</span> $i = <span class="hljs-number">0</span>;  <br><span class="hljs-keyword">until</span>($i &gt;= <span class="hljs-keyword">scalar</span> @array) &#123;  <br>    <span class="hljs-keyword">print</span> $i, <span class="hljs-string">&quot;: &quot;</span>, $array[$i];  <br>    $i++;  <br>&#125; <br><span class="hljs-comment">#!/usr/bin/perl</span><br>@tt = <span class="hljs-number">5</span>..<span class="hljs-number">9</span> ;<br><br><span class="hljs-keyword">my</span> $i = <span class="hljs-number">0</span>;  <br><span class="hljs-keyword">until</span>($i &gt;= <span class="hljs-keyword">scalar</span> @tt) &#123;  <br>    <span class="hljs-keyword">print</span> $i, <span class="hljs-string">&quot; : &quot;</span>, <span class="hljs-string">&quot;$tt[$i]\n&quot;</span>;  <br>    $i++;  <br>&#125; <br></code></pre></td></tr></table></figure>
+<h4 id="Do"><a href="#Do" class="headerlink" title="Do"></a>Do</h4><p>将until 或者while 加到后面</p>
+<figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs perl"><span class="hljs-comment">#!/usr/bin/perl</span><br>@tt = <span class="hljs-number">5</span>..<span class="hljs-number">9</span> ;<br><br><span class="hljs-keyword">my</span> $i = <span class="hljs-number">0</span>;  <br><span class="hljs-keyword">do</span> &#123;  <br>    <span class="hljs-keyword">print</span> $i, <span class="hljs-string">&quot; : &quot;</span>, <span class="hljs-string">&quot;$tt[$i]\n&quot;</span>;  <br>    $i++;  <br>&#125;<span class="hljs-keyword">until</span> ($i &gt;= <span class="hljs-keyword">scalar</span> @tt)<br></code></pre></td></tr></table></figure>
 
-<h4 id="8-2文章在首页的封面图"><a href="#8-2文章在首页的封面图" class="headerlink" title="8.2文章在首页的封面图"></a>8.2文章在首页的封面图</h4><img src="/2022/03/29/hello-hexo/eight.png" srcset="/img/loading.gif" lazyload class="" title="This is an example image">
-<p>设置方式如下：在文章中加上index_img<br>并且将图片保存在&#x2F;themes&#x2F;fluid&#x2F;source&#x2F;img中,在文章中只需要指定在img中就可以。也可以使用外链 Url 的绝对路径。</p>
-<hr>
-<p>title: test<br>date: 2022-03-29 15:23:35<br>index_img: &#x2F;img&#x2F;download.jpg<br>tags:</p>
-<hr>
-<h4 id="8-3-文章顶部放大图："><a href="#8-3-文章顶部放大图：" class="headerlink" title="8.3 文章顶部放大图："></a>8.3 文章顶部放大图：</h4><h2 id="默认显示主题配置中的-post-banner-img，如需要设置单个文章的-Banner，在-文档中指定-banner-img-属性。图片仍然放置在-x2F-themes-x2F-fluid-x2F-source-x2F-img"><a href="#默认显示主题配置中的-post-banner-img，如需要设置单个文章的-Banner，在-文档中指定-banner-img-属性。图片仍然放置在-x2F-themes-x2F-fluid-x2F-source-x2F-img" class="headerlink" title="默认显示主题配置中的 post.banner_img，如需要设置单个文章的 Banner，在 文档中指定 banner_img 属性。图片仍然放置在&#x2F;themes&#x2F;fluid&#x2F;source&#x2F;img"></a>默认显示主题配置中的 post.banner_img，如需要设置单个文章的 Banner，在 文档中指定 banner_img 属性。图片仍然放置在&#x2F;themes&#x2F;fluid&#x2F;source&#x2F;img</h2><p>title: 文章标题<br>tags: [Hexo, Fluid]<br>index_img: &#x2F;img&#x2F;example.jpg<br>banner_img: &#x2F;img&#x2F;post_banner.jpg<br>date: 2019-10-10 10:00:00</p>
-<hr>
-<h4 id="8-4-添加tag-categories"><a href="#8-4-添加tag-categories" class="headerlink" title="8.4 添加tag  categories"></a>8.4 添加tag  categories</h4><p>title: test<br>date: 2022-03-29 15:23:35<br>index_img: &#x2F;img&#x2F;download.jpg<br>banner_img: &#x2F;img&#x2F;download.jpg<br>categories:</p>
-<ul>
-<li>bioinformation<br>tags:</li>
-<li>software</li>
-</ul>
-<h3 id="9-博客与git-hub-链接，并且发布到GitHub上"><a href="#9-博客与git-hub-链接，并且发布到GitHub上" class="headerlink" title="9.博客与git hub 链接，并且发布到GitHub上"></a>9.博客与git hub 链接，并且发布到GitHub上</h3><p>创建自己的GitHub账号，登陆后新建仓库命名为lihm1.github.io<br>在仓库中新建文件index.html，里面随便写点内容，<br>然后打开上方的setting,找到pages，我们可以看到自己的网址</p>
-<img src="/2022/03/29/hello-hexo/nine.png" srcset="/img/loading.gif" lazyload class="" title="This is an example image">
-<p>发布到GitHub添加自己的github的地址以及自己的博客存在什么分支<br>安装hexo-deployer-git<br>npm install hexo-deployer-git –save<br>修改_config.yml的内容为自己的GitHub地址<br>deploy:<br>  type: git<br>  repository: <a target="_blank" rel="noopener" href="https://github.com/lihm1/lihm1.github.io.git">https://github.com/lihm1/lihm1.github.io.git</a><br>  branch: master</p>
-<p>将内容更新后上传到github<br>hexo g<br>hexo d<br>会弹出页面让登录github并且输入密码。我们再次打开自己的github就可以看到自己的仓库已经被更新。</p>
-<h3 id="10-博客源代码的保留"><a href="#10-博客源代码的保留" class="headerlink" title="10.博客源代码的保留"></a>10.博客源代码的保留</h3><p>github创建一个分支，将自己的源码保存在分支中，以后换电脑想要更新博客的时候可以使用。<br>我们可以先将github上的博客的仓库克隆下来<br>git clone <a href="mailto:&#103;&#105;&#x74;&#x40;&#x67;&#x69;&#116;&#x68;&#117;&#x62;&#46;&#x63;&#x6f;&#109;">&#103;&#105;&#x74;&#x40;&#x67;&#x69;&#116;&#x68;&#117;&#x62;&#46;&#x63;&#x6f;&#109;</a>:lihm1&#x2F;lihm1.github.io.git<br>进入本地的lihm1.github.io.git文件夹，创建分支source<br>git branch source<br>git branch<br>切换到分支source<br>git checkout source<br>我们可以在本地先把lihm1.github.io.git 文件全部删掉，然后将开始新建的blog文件夹的内容复制过来。后面将修改内容以及创建的分支push 到远程仓库。<br>git add .<br>git commit -m “hexo”<br>git push orgin source:source<br>后面如果换电脑，我们可以先从github上面clone下来source分支仓库，最好设置source为默认的仓库，在setting里面可以设置。这样code的代码就是source的。<br>下载下来后我们需要，然后安装、初始化hexo，重新设置hexo环境。</p>
-<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs cmake">npm <span class="hljs-keyword">install</span> hexo<br>npm <span class="hljs-keyword">install</span> hexo-deployer-git -save<br></code></pre></td></tr></table></figure>
-<p>然后hexo s,便可以看到自己的博客了，如果更新了内容并且想提交到github上，与原来是一样的操作参考9.发布到GitHub的内容。</p>
+<h4 id="迭代哈希键值"><a href="#迭代哈希键值" class="headerlink" title="迭代哈希键值"></a>迭代哈希键值</h4><p>你不能去迭代一个哈希变量。但是，你可以迭代它的键值。使用keys内置函数，获取哈希变量的所有键值数组。然后使用foreach方法，就像数组一样：</p>
+<p>foreach my $key (keys %scientists) {<br>    print $key, “: “, $scientists{$key};<br>} </p>
+<p>因为哈希变量没有顺序，键值可能以任何顺序被返回。使用sort内置函数对键值数组排序，按照字母表从小到大的方式：<br>foreach my $key (sort keys %scientists) {<br>    print $key, “: “, $scientists{$key};<br>} </p>
+<h4 id="跳出循环"><a href="#跳出循环" class="headerlink" title="跳出循环"></a>跳出循环</h4><p>Next last 允许在循环中改变程序<br>next跳至本次循环的结束，跳出迭代<br>last 退出循环语句块，从而结束循环，last语句之后的语句不再执行，continue语句块也不再执行</p>
+<h4 id="for-循环"><a href="#for-循环" class="headerlink" title="for 循环"></a>for 循环</h4><p>for循环不仅仅可以支持数字递增递减的循环方式，还可以支持其他类型的循环，只要能进行判断就可。<br>数字的递增递减<br>for (my $i&#x3D;1;$i&lt;&#x3D;10;$i++){<br>print $i,”&#x2F;n”;}</p>
+<p>for括号里面的三个表达式都可以省略，但是两个分号不能省略。</p>
+<figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs perl"><span class="hljs-keyword">for</span>(<span class="hljs-keyword">my</span> $str=<span class="hljs-string">&quot;malongshuai&quot;</span>;$str =~ <span class="hljs-regexp">s/(.)//</span>;)&#123;<br>    <span class="hljs-keyword">print</span> $str,<span class="hljs-string">&quot;\n&quot;</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>像shell的for i in ..的操作也可以使用，遍历整个列表；</p>
+<figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs perl"><span class="hljs-keyword">my</span> @arr=<span class="hljs-string">qw(shel cuabc bjab)</span><br><span class="hljs-keyword">for</span> $i (@arr)&#123;<br><span class="hljs-keyword">print</span> <span class="hljs-string">&quot;$i/n&quot;</span>;<br>&#125;<br><span class="hljs-keyword">for</span> @arr&#123;<br><span class="hljs-keyword">print</span> <span class="hljs-string">&quot;$_/n&quot;</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h4 id="perl-控制语句"><a href="#perl-控制语句" class="headerlink" title="perl 控制语句"></a>perl 控制语句</h4><h4 id="perl-三目运算符-？"><a href="#perl-三目运算符-？" class="headerlink" title="perl 三目运算符 ？"></a>perl 三目运算符 ？</h4><p>如果表达式为真，表达式返回if_true，否则返回if_false,<br>expression ? if_true:if_false</p>
+<figure class="highlight gams"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs gams"><span class="hljs-number">1.</span><span class="hljs-symbol">$</span>avg = <span class="hljs-symbol">$</span>n ? <span class="hljs-symbol">$</span><span class="hljs-keyword">sum</span>/<span class="hljs-symbol">$</span>n : <span class="hljs-string">&quot;------&quot;</span>;<br><span class="hljs-number">2.</span><span class="hljs-keyword">if</span>(<span class="hljs-symbol">$</span>n)&#123;<br>    <span class="hljs-symbol">$</span>avg = <span class="hljs-symbol">$</span><span class="hljs-keyword">sum</span> / <span class="hljs-symbol">$</span>n;<br>&#125;<span class="hljs-keyword">else</span>&#123;<br>    <span class="hljs-symbol">$</span>avg = <span class="hljs-string">&quot;------&quot;</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>上述代码表达内容相等<br>三目还可以更复杂：</p>
+<figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs perl"><span class="hljs-keyword">use</span> <span class="hljs-number">5.010</span>;<br><br>$score = $ARGV[<span class="hljs-number">0</span>];<br>$mark = ($score &lt; <span class="hljs-number">60</span>) ? <span class="hljs-string">&quot;a&quot;</span> : <br>        ($score &lt; <span class="hljs-number">80</span>) ? <span class="hljs-string">&quot;b&quot;</span> : <br>        ($score &lt; <span class="hljs-number">90</span>) ? <span class="hljs-string">&quot;c&quot;</span> : <br>        <span class="hljs-string">&quot;d&quot;</span>;          <span class="hljs-comment"># 默认值</span><br><span class="hljs-keyword">say</span> $mark;<br></code></pre></td></tr></table></figure>
+<p>输出的结果：</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs stylus">$ perl test<span class="hljs-selector-class">.plx</span><br><span class="hljs-selector-tag">a</span><br>$ perl test<span class="hljs-selector-class">.plx</span> <span class="hljs-number">33</span><br><span class="hljs-selector-tag">a</span><br>$ perl test<span class="hljs-selector-class">.plx</span> <span class="hljs-number">63</span><br><span class="hljs-selector-tag">b</span><br>$ perl test<span class="hljs-selector-class">.plx</span> <span class="hljs-number">83</span><br>c<br>$ perl test<span class="hljs-selector-class">.plx</span> <span class="hljs-number">93</span><br>d<br></code></pre></td></tr></table></figure>
+<h4 id="and-操作符："><a href="#and-操作符：" class="headerlink" title="and 操作符："></a>and 操作符：</h4><p>用于连接两个行为，左边为真，就执行右边的操作。<br>$m &lt; $n and $m &#x3D; $n;   # 以$m的姿态取出$m和$n之间较大值<br>下面代码所表达的意思是一样的。</p>
+<figure class="highlight autoit"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs autoit"><span class="hljs-keyword">if</span> ($m&lt;$n)&#123;$m=$n&#125;<br>$m=$n <span class="hljs-keyword">if</span> $m&lt;$n<span class="hljs-comment">;</span><br>$m=($m &lt; $n) ? $n : $m<span class="hljs-comment">;</span><br></code></pre></td></tr></table></figure>
 
               
             </div>
@@ -326,7 +308,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/blog/" class="category-chain-item">blog</a>
+  <a href="/categories/perl/" class="category-chain-item">perl</a>
   
   
 
@@ -341,7 +323,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/hexo/">#hexo</a>
+        <a href="/tags/study/">#study</a>
       
     </div>
   
@@ -353,8 +335,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>hello hexo</div>
-      <div>http://example.com/2022/03/29/hello-hexo/</div>
+      <div>perl_for</div>
+      <div>http://example.com/2022/03/30/perl-for/</div>
     </div>
     <div class="license-meta">
       
@@ -366,7 +348,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>March 29, 2022</div>
+          <div>March 30, 2022</div>
         </div>
       
       
@@ -396,15 +378,15 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/03/29/test/" title="test">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">test</span>
-                        <span class="visible-mobile">Previous</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/2022/03/30/WGCNA/" title="WGCNA">
+                        <span class="hidden-mobile">WGCNA</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>

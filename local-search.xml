@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>test</title>
+    <link href="/2022/03/29/test/"/>
+    <url>/2022/03/29/test/</url>
+    
+    <content type="html"><![CDATA[<p>测试图片</p><img src="/2022/03/29/test/download.jpg" class="" title="This is an example image"><p>git branch source<br>git branch<br>git checkout source<br>git push origin source:source</p><p>希望没有报错</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Diary</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>PS3</tag>
+      
+      <tag>Games</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>hello hexo</title>
+    <link href="/2022/03/29/hello-hexo/"/>
+    <url>/2022/03/29/hello-hexo/</url>
+    
+    <content type="html"><![CDATA[<p>参考<br><a href="https://fluid-dev.github.io/hexo-fluid-docs/guide/#%E5%88%86%E7%B1%BB%E9%A1%B5">https://fluid-dev.github.io/hexo-fluid-docs/guide/#%E5%88%86%E7%B1%BB%E9%A1%B5</a><br><a href="https://blog.csdn.net/yaorongke/article/details/119089190">https://blog.csdn.net/yaorongke/article/details/119089190</a></p><h3 id="1-安装Node-js"><a href="#1-安装Node-js" class="headerlink" title="1.安装Node.js"></a>1.安装Node.js</h3><p>官网下载最新版<br><a href="https://nodejs.org/en/">https://nodejs.org/en/</a><br>最后安装好之后,打开命令提示符，输入node -v和npm -v，出现版本号就成功了。</p><h3 id="2-添加国内镜像源"><a href="#2-添加国内镜像源" class="headerlink" title="2.添加国内镜像源"></a>2.添加国内镜像源</h3><p>如果没有梯子的话，可以使用阿里的国内镜像进行加速。<br>npm config set registry <a href="https://registry.npm.taobao.org/">https://registry.npm.taobao.org</a></p><h3 id="3-安装hexo"><a href="#3-安装hexo" class="headerlink" title="3.安装hexo"></a>3.安装hexo</h3><p>输入npm install -g hexo-cli  安装hexo<br>输入 hexo -h 检查是否安装成功</p><h3 id="4-新建文件夹blog"><a href="#4-新建文件夹blog" class="headerlink" title="4.新建文件夹blog"></a>4.新建文件夹blog</h3><p>进入我们新建的文件夹，初始化文件夹 hexo init</p><img src="/2022/03/29/hello-hexo/one.png" class="" title="This is an example image"><p>我们会得到相应的hexo搭建博客的文件：</p><img src="/2022/03/29/hello-hexo/two.png" class="" title="This is an example image"><h3 id="5-新建博客"><a href="#5-新建博客" class="headerlink" title="5.新建博客"></a>5.新建博客</h3><p>hexo new post “your blog name”<br>打开文件夹的source&#x2F;_posts &#x2F; 里面包含自己的博客的md文件</p><h3 id="6-生成博客静态网址"><a href="#6-生成博客静态网址" class="headerlink" title="6.生成博客静态网址"></a>6.生成博客静态网址</h3><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo g </span><br><span class="hljs-attribute">hexo s</span><br></code></pre></td></tr></table></figure><img src="/2022/03/29/hello-hexo/three.png" class="" title="This is an example image"><img src="/2022/03/29/hello-hexo/four.png" class="" title="This is an example image"><p>输入网址就可以看到自己的博客了</p><h3 id="7-博客的主题修改"><a href="#7-博客的主题修改" class="headerlink" title="7.博客的主题修改"></a>7.博客的主题修改</h3><p>搜索自己喜欢的主题，将主题下载到blog&#x2F;themes 文件夹下。并将文件名修改为主题名。<br>下面以fluid的主题为例：<br>最新版本下载地址为：<a href="https://github.com/fluid-dev/hexo-theme-fluid/releases">https://github.com/fluid-dev/hexo-theme-fluid/releases</a><br>下载后解压，并重命名为fluid。<br>在hexo&#x2F;blog&#x2F;_config.yml 修改自己的主题<br>#Extensions<br>##Plugins: <a href="https://hexo.io/plugins/">https://hexo.io/plugins/</a><br>##Themes: <a href="https://hexo.io/themes/">https://hexo.io/themes/</a><br>theme: fluid</p><p>查看博客能否生成：</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo s</span><br></code></pre></td></tr></table></figure><p>此时博客的样子：</p><img src="/2022/03/29/hello-hexo/five.png" class="" title="This is an example image"><h3 id="8-个性化博客主题"><a href="#8-个性化博客主题" class="headerlink" title="8.个性化博客主题"></a>8.个性化博客主题</h3><h4 id="8-1写文章的时候生成文件夹保存图片"><a href="#8-1写文章的时候生成文件夹保存图片" class="headerlink" title="8.1写文章的时候生成文件夹保存图片"></a>8.1写文章的时候生成文件夹保存图片</h4><p>将_config.yml里面的post_asset_folder改为true。<br>post_asset_folder: true</p><figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs haxe">hexo <span class="hljs-keyword">new</span> <span class="hljs-type">post</span> <span class="hljs-string">&quot;test&quot;</span><br></code></pre></td></tr></table></figure><img src="/2022/03/29/hello-hexo/six.png" class="" title="This is an example image"><p>我们可以下载一张图片放入test文件夹里面，如何在文中引用，请参照<a href="https://hexo.io/zh-cn/docs/asset-folders.html">https://hexo.io/zh-cn/docs/asset-folders.html</a><br>在test.md中加入下载的图片其中一种方法如下所示：</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">test</span><br><span class="hljs-attr">date:</span> <span class="hljs-number">2022-03-29 15:23:35</span><br><span class="hljs-attr">tags:</span><br><span class="hljs-meta">---</span><br><span class="hljs-string">测试图片</span><br>&#123;<span class="hljs-string">%</span> <span class="hljs-string">asset_img</span> <span class="hljs-string">download.jpg</span> <span class="hljs-string">This</span> <span class="hljs-string">is</span> <span class="hljs-string">an</span> <span class="hljs-string">example</span> <span class="hljs-string">image</span> <span class="hljs-string">%</span>&#125;<br></code></pre></td></tr></table></figure><p>提交修改后再次打开我们的博客可以看到：</p><h4 id="8-2文章在首页的封面图"><a href="#8-2文章在首页的封面图" class="headerlink" title="8.2文章在首页的封面图"></a>8.2文章在首页的封面图</h4><img src="/2022/03/29/hello-hexo/eight.png" class="" title="This is an example image"><p>设置方式如下：在文章中加上index_img<br>并且将图片保存在&#x2F;themes&#x2F;fluid&#x2F;source&#x2F;img中,在文章中只需要指定在img中就可以。也可以使用外链 Url 的绝对路径。</p><hr><p>title: test<br>date: 2022-03-29 15:23:35<br>index_img: &#x2F;img&#x2F;download.jpg<br>tags:</p><hr><h4 id="8-3-文章顶部放大图："><a href="#8-3-文章顶部放大图：" class="headerlink" title="8.3 文章顶部放大图："></a>8.3 文章顶部放大图：</h4><h2 id="默认显示主题配置中的-post-banner-img，如需要设置单个文章的-Banner，在-文档中指定-banner-img-属性。图片仍然放置在-x2F-themes-x2F-fluid-x2F-source-x2F-img"><a href="#默认显示主题配置中的-post-banner-img，如需要设置单个文章的-Banner，在-文档中指定-banner-img-属性。图片仍然放置在-x2F-themes-x2F-fluid-x2F-source-x2F-img" class="headerlink" title="默认显示主题配置中的 post.banner_img，如需要设置单个文章的 Banner，在 文档中指定 banner_img 属性。图片仍然放置在&#x2F;themes&#x2F;fluid&#x2F;source&#x2F;img"></a>默认显示主题配置中的 post.banner_img，如需要设置单个文章的 Banner，在 文档中指定 banner_img 属性。图片仍然放置在&#x2F;themes&#x2F;fluid&#x2F;source&#x2F;img</h2><p>title: 文章标题<br>tags: [Hexo, Fluid]<br>index_img: &#x2F;img&#x2F;example.jpg<br>banner_img: &#x2F;img&#x2F;post_banner.jpg<br>date: 2019-10-10 10:00:00</p><hr><h4 id="8-4-添加tag-categories"><a href="#8-4-添加tag-categories" class="headerlink" title="8.4 添加tag  categories"></a>8.4 添加tag  categories</h4><p>title: test<br>date: 2022-03-29 15:23:35<br>index_img: &#x2F;img&#x2F;download.jpg<br>banner_img: &#x2F;img&#x2F;download.jpg<br>categories:</p><ul><li>bioinformation<br>tags:</li><li>software</li></ul><h3 id="9-博客与git-hub-链接，并且发布到GitHub上"><a href="#9-博客与git-hub-链接，并且发布到GitHub上" class="headerlink" title="9.博客与git hub 链接，并且发布到GitHub上"></a>9.博客与git hub 链接，并且发布到GitHub上</h3><p>创建自己的GitHub账号，登陆后新建仓库命名为lihm1.github.io<br>在仓库中新建文件index.html，里面随便写点内容，<br>然后打开上方的setting,找到pages，我们可以看到自己的网址</p><img src="/2022/03/29/hello-hexo/nine.png" class="" title="This is an example image"><p>发布到GitHub添加自己的github的地址以及自己的博客存在什么分支<br>安装hexo-deployer-git<br>npm install hexo-deployer-git –save<br>修改_config.yml的内容为自己的GitHub地址<br>deploy:<br>  type: git<br>  repository: <a href="https://github.com/lihm1/lihm1.github.io.git">https://github.com/lihm1/lihm1.github.io.git</a><br>  branch: master</p><p>将内容更新后上传到github<br>hexo g<br>hexo d<br>会弹出页面让登录github并且输入密码。我们再次打开自己的github就可以看到自己的仓库已经被更新。</p><h3 id="10-博客源代码的保留"><a href="#10-博客源代码的保留" class="headerlink" title="10.博客源代码的保留"></a>10.博客源代码的保留</h3><p>github创建一个分支，将自己的源码保存在分支中，以后换电脑想要更新博客的时候可以使用。<br>我们可以先将github上的博客的仓库克隆下来<br>git clone <a href="mailto:&#103;&#105;&#x74;&#x40;&#x67;&#x69;&#116;&#x68;&#117;&#x62;&#46;&#x63;&#x6f;&#109;">&#103;&#105;&#x74;&#x40;&#x67;&#x69;&#116;&#x68;&#117;&#x62;&#46;&#x63;&#x6f;&#109;</a>:lihm1&#x2F;lihm1.github.io.git<br>进入本地的lihm1.github.io.git文件夹，创建分支source<br>git branch source<br>git branch<br>切换到分支source<br>git checkout source<br>我们可以在本地先把lihm1.github.io.git 文件全部删掉，然后将开始新建的blog文件夹的内容复制过来。后面将修改内容以及创建的分支push 到远程仓库。<br>git add .<br>git commit -m “hexo”<br>git push orgin source:source<br>后面如果换电脑，我们可以先从github上面clone下来source分支仓库，最好设置source为默认的仓库，在setting里面可以设置。这样code的代码就是source的。<br>下载下来后我们需要，然后安装、初始化hexo，重新设置hexo环境。</p><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs cmake">npm <span class="hljs-keyword">install</span> hexo<br>npm <span class="hljs-keyword">install</span> hexo-deployer-git -save<br></code></pre></td></tr></table></figure><p>然后hexo s,便可以看到自己的博客了，如果更新了内容并且想提交到github上，与原来是一样的操作参考9.发布到GitHub的内容。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>blog</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>hexo</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>

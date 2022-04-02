@@ -16,23 +16,23 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="perl 循环用法while12345my $i &#x3D; 0;  while($i &lt; scalar @array) &amp;#123;      print $i, &quot;: &quot;, $array[$i];      $i++;  &amp;#125;  举例： 123456@tt &#x3D; 5..9 ;my $i &#x3D; 0;  while($i &lt; scalar @tt) &amp;#123;">
+    <meta name="description" content="最近尝试着用perl处理vcf文件得到自己想要的内容，在这里做个总结。 1.向vcf文件添加一列：提取vep注释后的vcf中的样本名并将样本名添加到文件的每条染色体后面解决思路：读入文件，join ;push ; 1234567891011121314151617181920212223242526272829303132#!user&#x2F;bin&#x2F;perluse strict;my $bcftools">
 <meta property="og:type" content="article">
-<meta property="og:title" content="perl_for">
-<meta property="og:url" content="http://example.com/2022/03/30/perl-for/index.html">
+<meta property="og:title" content="perl处理vcf文件">
+<meta property="og:url" content="http://example.com/2022/04/02/perl%E5%A4%84%E7%90%86vcf%E6%96%87%E4%BB%B6/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="perl 循环用法while12345my $i &#x3D; 0;  while($i &lt; scalar @array) &amp;#123;      print $i, &quot;: &quot;, $array[$i];      $i++;  &amp;#125;  举例： 123456@tt &#x3D; 5..9 ;my $i &#x3D; 0;  while($i &lt; scalar @tt) &amp;#123;">
+<meta property="og:description" content="最近尝试着用perl处理vcf文件得到自己想要的内容，在这里做个总结。 1.向vcf文件添加一列：提取vep注释后的vcf中的样本名并将样本名添加到文件的每条染色体后面解决思路：读入文件，join ;push ; 1234567891011121314151617181920212223242526272829303132#!user&#x2F;bin&#x2F;perluse strict;my $bcftools">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/img/pic3.jpg">
-<meta property="article:published_time" content="2022-03-30T02:58:22.000Z">
-<meta property="article:modified_time" content="2022-03-30T03:11:00.009Z">
+<meta property="article:published_time" content="2022-04-02T06:37:03.000Z">
+<meta property="article:modified_time" content="2022-04-02T07:04:41.739Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="study">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://example.com/img/pic3.jpg">
   
   
-  <title>perl_for - Hexo</title>
+  <title>perl处理vcf文件 - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -189,7 +189,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="perl_for"></span>
+            <span id="subtitle" data-typed-text="perl处理vcf文件"></span>
           
         </div>
 
@@ -200,8 +200,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-03-30 10:58" pubdate>
-          March 30, 2022 am
+        <time datetime="2022-04-02 14:37" pubdate>
+          April 2, 2022 pm
         </time>
       </span>
     
@@ -212,7 +212,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.9k words
+          3.6k words
         
       </span>
     
@@ -223,7 +223,7 @@
         
         
         
-          17 mins
+          31 mins
         
       </span>
     
@@ -261,36 +261,22 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">perl_for</h1>
+            <h1 style="display: none">perl处理vcf文件</h1>
             
             <div class="markdown-body">
               
-              <h3 id="perl-循环用法"><a href="#perl-循环用法" class="headerlink" title="perl 循环用法"></a>perl 循环用法</h3><h4 id="while"><a href="#while" class="headerlink" title="while"></a>while</h4><figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs perl"><span class="hljs-keyword">my</span> $i = <span class="hljs-number">0</span>;  <br><span class="hljs-keyword">while</span>($i &lt; <span class="hljs-keyword">scalar</span> @array) &#123;  <br>    <span class="hljs-keyword">print</span> $i, <span class="hljs-string">&quot;: &quot;</span>, $array[$i];  <br>    $i++;  <br>&#125; <br></code></pre></td></tr></table></figure>
-<p>举例：</p>
-<figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs perl">@tt = <span class="hljs-number">5</span>..<span class="hljs-number">9</span> ;<br><span class="hljs-keyword">my</span> $i = <span class="hljs-number">0</span>;  <br><span class="hljs-keyword">while</span>($i &lt; <span class="hljs-keyword">scalar</span> @tt) &#123;  <br>    <span class="hljs-keyword">print</span> $i, <span class="hljs-string">&quot; : &quot;</span>, <span class="hljs-string">&quot;$tt[$i]\n&quot;</span>;  <br>    $i++;  <br>&#125; <br></code></pre></td></tr></table></figure>
-<h4 id="until"><a href="#until" class="headerlink" title="until"></a>until</h4><figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs perl"><span class="hljs-keyword">my</span> $i = <span class="hljs-number">0</span>;  <br><span class="hljs-keyword">until</span>($i &gt;= <span class="hljs-keyword">scalar</span> @array) &#123;  <br>    <span class="hljs-keyword">print</span> $i, <span class="hljs-string">&quot;: &quot;</span>, $array[$i];  <br>    $i++;  <br>&#125; <br><span class="hljs-comment">#!/usr/bin/perl</span><br>@tt = <span class="hljs-number">5</span>..<span class="hljs-number">9</span> ;<br><br><span class="hljs-keyword">my</span> $i = <span class="hljs-number">0</span>;  <br><span class="hljs-keyword">until</span>($i &gt;= <span class="hljs-keyword">scalar</span> @tt) &#123;  <br>    <span class="hljs-keyword">print</span> $i, <span class="hljs-string">&quot; : &quot;</span>, <span class="hljs-string">&quot;$tt[$i]\n&quot;</span>;  <br>    $i++;  <br>&#125; <br></code></pre></td></tr></table></figure>
-<h4 id="Do"><a href="#Do" class="headerlink" title="Do"></a>Do</h4><p>将until 或者while 加到后面</p>
-<figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs perl"><span class="hljs-comment">#!/usr/bin/perl</span><br>@tt = <span class="hljs-number">5</span>..<span class="hljs-number">9</span> ;<br><br><span class="hljs-keyword">my</span> $i = <span class="hljs-number">0</span>;  <br><span class="hljs-keyword">do</span> &#123;  <br>    <span class="hljs-keyword">print</span> $i, <span class="hljs-string">&quot; : &quot;</span>, <span class="hljs-string">&quot;$tt[$i]\n&quot;</span>;  <br>    $i++;  <br>&#125;<span class="hljs-keyword">until</span> ($i &gt;= <span class="hljs-keyword">scalar</span> @tt)<br></code></pre></td></tr></table></figure>
+              <p>最近尝试着用perl处理vcf文件得到自己想要的内容，在这里做个总结。</p>
+<h3 id="1-向vcf文件添加一列："><a href="#1-向vcf文件添加一列：" class="headerlink" title="1.向vcf文件添加一列："></a>1.向vcf文件添加一列：</h3><p>提取vep注释后的vcf中的样本名并将样本名添加到文件的每条染色体后面<br>解决思路：<br>读入文件，join ;push ;</p>
+<figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><code class="hljs perl"><span class="hljs-comment">#!user/bin/perl</span><br><br><span class="hljs-keyword">use</span> strict;<br><span class="hljs-keyword">my</span> $bcftools = <span class="hljs-string">&quot;bcftools-1.9&quot;</span>;<br><span class="hljs-keyword">my</span> $varFile = <span class="hljs-string">&quot;vqsr_pass.vep.vcf&quot;</span>;<br><br><span class="hljs-keyword">my</span>(@name,$samplename);<br>    <span class="hljs-keyword">open</span> IH, <span class="hljs-string">&quot;$bcftools view -h $varFile |&quot;</span> || <span class="hljs-keyword">die</span> $!;<br>    <span class="hljs-keyword">open</span> VCF, <span class="hljs-string">&quot;&gt;vctout&quot;</span>;<br>    <span class="hljs-keyword">while</span>(&lt;IH&gt;)&#123;<br>        <span class="hljs-keyword">chomp</span>();<br>        <span class="hljs-keyword">if</span> (<span class="hljs-regexp">/^#CHROM/</span>)&#123;<br>            @name = <span class="hljs-keyword">split</span> <span class="hljs-regexp">/\s+/</span>,$_;<br>            $samplename = @name[<span class="hljs-number">9</span>]<br>        &#125;<br>    &#125;<br><span class="hljs-keyword">print</span> $samplename;<br><br><span class="hljs-keyword">open</span> FA, <span class="hljs-string">&quot;$bcftools view -H $varFile |&quot;</span> || <span class="hljs-keyword">die</span> $!;<br><span class="hljs-keyword">while</span> (&lt;FA&gt;)&#123;<br>    <span class="hljs-keyword">chomp</span>();<br>    <span class="hljs-keyword">if</span> (<span class="hljs-regexp">/^#/</span>)&#123;<br>        <span class="hljs-keyword">next</span>;<br>    &#125;<span class="hljs-keyword">else</span>&#123;<br>        <span class="hljs-keyword">my</span> @seq = <span class="hljs-keyword">split</span> <span class="hljs-regexp">/\s+/</span>, $_;<br>        <span class="hljs-keyword">my</span> ($chr, $pos, $ID, $REF, $ALT, $QUAL, $FILTER, $INFO, $FORMAT) = @seq[<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>,<span class="hljs-number">7</span>, <span class="hljs-number">8</span>];<br>        <span class="hljs-keyword">my</span> $FORMAT = <span class="hljs-keyword">join</span> (<span class="hljs-string">&quot;,&quot;</span>,@seq[<span class="hljs-number">8</span>],@seq[<span class="hljs-number">9</span>]);<br>        <span class="hljs-keyword">print</span> VCF <span class="hljs-keyword">join</span> (<span class="hljs-string">&quot;\t&quot;</span>,$chr, $pos, $ID, $REF, $ALT, $QUAL, $FILTER, $INFO, $FORMAT,$samplename), <span class="hljs-string">&quot;\n&quot;</span>;    &#125;<br>&#125;  <br><span class="hljs-keyword">close</span> FA;<br><span class="hljs-keyword">close</span> VCF;<br><span class="hljs-keyword">close</span> IH;<br></code></pre></td></tr></table></figure>
 
-<h4 id="迭代哈希键值"><a href="#迭代哈希键值" class="headerlink" title="迭代哈希键值"></a>迭代哈希键值</h4><p>你不能去迭代一个哈希变量。但是，你可以迭代它的键值。使用keys内置函数，获取哈希变量的所有键值数组。然后使用foreach方法，就像数组一样：</p>
-<p>foreach my $key (keys %scientists) {<br>    print $key, “: “, $scientists{$key};<br>} </p>
-<p>因为哈希变量没有顺序，键值可能以任何顺序被返回。使用sort内置函数对键值数组排序，按照字母表从小到大的方式：<br>foreach my $key (sort keys %scientists) {<br>    print $key, “: “, $scientists{$key};<br>} </p>
-<h4 id="跳出循环"><a href="#跳出循环" class="headerlink" title="跳出循环"></a>跳出循环</h4><p>Next last 允许在循环中改变程序<br>next跳至本次循环的结束，跳出迭代<br>last 退出循环语句块，从而结束循环，last语句之后的语句不再执行，continue语句块也不再执行</p>
-<h4 id="for-循环"><a href="#for-循环" class="headerlink" title="for 循环"></a>for 循环</h4><p>for循环不仅仅可以支持数字递增递减的循环方式，还可以支持其他类型的循环，只要能进行判断就可。<br>数字的递增递减<br>for (my $i&#x3D;1;$i&lt;&#x3D;10;$i++){<br>print $i,”&#x2F;n”;}</p>
-<p>for括号里面的三个表达式都可以省略，但是两个分号不能省略。</p>
-<figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs perl"><span class="hljs-keyword">for</span>(<span class="hljs-keyword">my</span> $str=<span class="hljs-string">&quot;malongshuai&quot;</span>;$str =~ <span class="hljs-regexp">s/(.)//</span>;)&#123;<br>    <span class="hljs-keyword">print</span> $str,<span class="hljs-string">&quot;\n&quot;</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+<h3 id="2-读取vcf文件"><a href="#2-读取vcf文件" class="headerlink" title="2.读取vcf文件"></a>2.读取vcf文件</h3><p>保留#CHROM 这一行</p>
+<figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs perl"><span class="hljs-comment">#!user/bin/perl</span><br><br><span class="hljs-keyword">use</span> strict;<br><br><span class="hljs-keyword">open</span> VCF,<span class="hljs-string">&quot;&lt;$ARGV[0]&quot;</span>;<br><span class="hljs-keyword">open</span> OUT,<span class="hljs-string">&quot;&gt;mmary.txt&quot;</span>;<br><br><span class="hljs-keyword">my</span> @linelist=&lt;VCF&gt;;<br><span class="hljs-keyword">foreach</span> <span class="hljs-keyword">my</span> $eachline(@linelist)&#123;<br><span class="hljs-keyword">if</span> ($eachline=~<span class="hljs-regexp">/^##/</span>)&#123;<br><span class="hljs-keyword">next</span>;&#125;<br><span class="hljs-keyword">elsif</span>($eachline=~<span class="hljs-regexp">/^#CHROM/</span>)&#123;<br>  $eachline =~ <span class="hljs-regexp">s/#//</span>;<br>  <span class="hljs-keyword">print</span> OUT $eachline;<br>&#125;<span class="hljs-keyword">else</span>&#123;<br><span class="hljs-keyword">print</span> OUT $eachline;<br>&#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<h3 id="3-将多个vcf文件合并为一个并且按照染色体进行排序"><a href="#3-将多个vcf文件合并为一个并且按照染色体进行排序" class="headerlink" title="3.将多个vcf文件合并为一个并且按照染色体进行排序"></a>3.将多个vcf文件合并为一个并且按照染色体进行排序</h3><p>排序的解决思路：哈希表的排序</p>
+<figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><code class="hljs perl"><span class="hljs-comment">#!user/bin/perl</span><br><br><span class="hljs-keyword">use</span> warnings;<br><span class="hljs-keyword">use</span> Data::Dumper;<br><br><span class="hljs-keyword">my</span> $bcftools = <span class="hljs-string">&quot;bcftools-1.9&quot;</span>;<br><br><span class="hljs-keyword">my</span> $indir = $ARGV[<span class="hljs-number">0</span>];<br><br><span class="hljs-keyword">opendir</span>  DIR, $indir <span class="hljs-keyword">or</span> <span class="hljs-keyword">die</span> <span class="hljs-string">&quot;Connot open $indir: $!&quot;</span>;<br><br>@allfile = <span class="hljs-keyword">grep</span> &#123; <span class="hljs-regexp">/^[^\.]/</span> &#125; <span class="hljs-keyword">readdir</span> DIR;<br><br><br><span class="hljs-keyword">open</span> mergeVCF, <span class="hljs-string">&quot;&gt;mergevcf&quot;</span> || <span class="hljs-keyword">die</span> $!;<br><br><span class="hljs-keyword">my</span> (%hashVar);<br><br><span class="hljs-keyword">foreach</span> <span class="hljs-keyword">my</span> $file (@allfile)&#123;<br><span class="hljs-keyword">open</span> FA,<span class="hljs-string">&quot;$indir/$file&quot;</span>|| <span class="hljs-keyword">die</span> $!;<br><span class="hljs-keyword">while</span>(&lt;FA&gt;)&#123;<br><span class="hljs-keyword">chomp</span>();<br><span class="hljs-keyword">my</span> @seq = <span class="hljs-keyword">split</span> <span class="hljs-regexp">/\s+/</span>, $_;<br><span class="hljs-keyword">my</span> ($chr, $pos, $ID, $REF, $ALT, $QUAL, $FILTER) = @seq[<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>];<br>$hashVar&#123;$chr&#125;&#123;$pos&#125;&#123;$ID&#125;&#123;$REF&#125;&#123;$ALT&#125;&#123;$QUAL&#125;&#123;$FILTER&#125;=<span class="hljs-string">&quot;sample&quot;</span>;<br>&#125;<br>&#125;<br><br><br><span class="hljs-keyword">my</span> @chrorder =<span class="hljs-string">qw (chr1 chr2)</span>;<br><br> <br><span class="hljs-keyword">for</span>  <span class="hljs-keyword">my</span> $chr (@chrorder)&#123;<br><span class="hljs-keyword">next</span> <span class="hljs-keyword">unless</span> (<span class="hljs-keyword">exists</span> $hashVar&#123;$chr&#125;);<br><span class="hljs-keyword">for</span>  <span class="hljs-keyword">my</span> $pos (<span class="hljs-keyword">sort</span> &#123;$a&lt;=&gt;$b&#125; <span class="hljs-keyword">keys</span> %&#123;$hashVar&#123;$chr&#125;&#125;)&#123;<br><span class="hljs-keyword">print</span> <span class="hljs-string">&quot;$pos\n&quot;</span>;<br><span class="hljs-keyword">for</span>  <span class="hljs-keyword">my</span> $ID (<span class="hljs-keyword">keys</span> %&#123;$hashVar&#123;$chr&#125;&#123;$pos&#125;&#125;)&#123;<br><span class="hljs-keyword">for</span>  <span class="hljs-keyword">my</span> $REF (<span class="hljs-keyword">keys</span> %&#123;$hashVar&#123;$chr&#125;&#123;$pos&#125;&#123;$ID&#125;&#125;)&#123;<br><span class="hljs-keyword">for</span>  <span class="hljs-keyword">my</span> $ALT (<span class="hljs-keyword">keys</span> %&#123;$hashVar&#123;$chr&#125;&#123;$pos&#125;&#123;$ID&#125;&#123;$REF&#125;&#125;)&#123;<br><span class="hljs-keyword">for</span>  <span class="hljs-keyword">my</span> $QUAL (<span class="hljs-keyword">keys</span> %&#123;$hashVar&#123;$chr&#125;&#123;$pos&#125;&#123;$ID&#125;&#123;$REF&#125;&#123;$ALT&#125;&#125;)&#123;<br><span class="hljs-keyword">for</span>  <span class="hljs-keyword">my</span> $FILTER (<span class="hljs-keyword">keys</span> %&#123;$hashVar&#123;$chr&#125;&#123;$pos&#125;&#123;$ID&#125;&#123;$REF&#125;&#123;$ALT&#125;&#123;$QUAL&#125;&#125;)&#123;<br><span class="hljs-keyword">print</span> mergeVCF <span class="hljs-keyword">join</span> (<span class="hljs-string">&quot;\t&quot;</span>,$chr, $pos, $ID, $REF, $ALT,$QUAL, $FILTER), <span class="hljs-string">&quot;\n&quot;</span>;<br><br>&#125;&#125;&#125;&#125;&#125;&#125;&#125;<br><br><br><span class="hljs-keyword">print</span> Dumper (\%hashVar);<br><span class="hljs-keyword">close</span> mergeVCF;<br></code></pre></td></tr></table></figure>
 
-<p>像shell的for i in ..的操作也可以使用，遍历整个列表；</p>
-<figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs perl"><span class="hljs-keyword">my</span> @arr=<span class="hljs-string">qw(shel cuabc bjab)</span><br><span class="hljs-keyword">for</span> $i (@arr)&#123;<br><span class="hljs-keyword">print</span> <span class="hljs-string">&quot;$i/n&quot;</span>;<br>&#125;<br><span class="hljs-keyword">for</span> @arr&#123;<br><span class="hljs-keyword">print</span> <span class="hljs-string">&quot;$_/n&quot;</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+<h3 id="4-按照染色体提取分别保存在不同的文件里"><a href="#4-按照染色体提取分别保存在不同的文件里" class="headerlink" title="4.按照染色体提取分别保存在不同的文件里"></a>4.按照染色体提取分别保存在不同的文件里</h3><figure class="highlight plaintext"><figcaption><span>strict;</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><code class="hljs use"><br><br>my $bcftools = &quot;bcftools-1.9&quot;;<br>my $varFile = &quot;15TSLC.vqsr_pass.vep.vcf.gz &quot;;<br><br>open IH, &quot;$bcftools view -H $varFile |&quot; || die $!;   <br>open other,&quot;&gt;other.vcf&quot; || die $!;<br><br>my (%normal_chr,%fh);<br>my @chrorder = qw(1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 X Y);<br><br>foreach my $chr (@chrorder)&#123;<br>    $normal_chr&#123;&quot;chr$chr&quot;&#125;=1 ; <br>    open  $fh&#123;&quot;chr&quot;.$chr&#125;,&quot;&gt;chr$chr.txt&quot; or die $!;<br>&#125;<br><br><br>while(&lt;IH&gt;)&#123;<br>    chomp();<br>    my  @seq = split /\s+/, $_ ;<br>    if (exists $normal_chr&#123;$seq[0]&#125;)&#123;<br>        print $seq[0];<br>        $fh&#123;$seq[0]&#125;-&gt;print( &quot;$_\n&quot;);<br>            &#125;else&#123;<br>                print other $_;&#125;<br>        &#125;<br>foreach my $chr (@chrorder)&#123;<br>    close $fh&#123;&quot;chr&quot;.$chr&#125;;<br>&#125;<br> close other;<br></code></pre></td></tr></table></figure>
 
-<h4 id="perl-控制语句"><a href="#perl-控制语句" class="headerlink" title="perl 控制语句"></a>perl 控制语句</h4><h4 id="perl-三目运算符-？"><a href="#perl-三目运算符-？" class="headerlink" title="perl 三目运算符 ？"></a>perl 三目运算符 ？</h4><p>如果表达式为真，表达式返回if_true，否则返回if_false,<br>expression ? if_true:if_false</p>
-<figure class="highlight gams"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs gams"><span class="hljs-number">1.</span><span class="hljs-symbol">$</span>avg = <span class="hljs-symbol">$</span>n ? <span class="hljs-symbol">$</span><span class="hljs-keyword">sum</span>/<span class="hljs-symbol">$</span>n : <span class="hljs-string">&quot;------&quot;</span>;<br><span class="hljs-number">2.</span><span class="hljs-keyword">if</span>(<span class="hljs-symbol">$</span>n)&#123;<br>    <span class="hljs-symbol">$</span>avg = <span class="hljs-symbol">$</span><span class="hljs-keyword">sum</span> / <span class="hljs-symbol">$</span>n;<br>&#125;<span class="hljs-keyword">else</span>&#123;<br>    <span class="hljs-symbol">$</span>avg = <span class="hljs-string">&quot;------&quot;</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
-<p>上述代码表达内容相等<br>三目还可以更复杂：</p>
-<figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs perl"><span class="hljs-keyword">use</span> <span class="hljs-number">5.010</span>;<br><br>$score = $ARGV[<span class="hljs-number">0</span>];<br>$mark = ($score &lt; <span class="hljs-number">60</span>) ? <span class="hljs-string">&quot;a&quot;</span> : <br>        ($score &lt; <span class="hljs-number">80</span>) ? <span class="hljs-string">&quot;b&quot;</span> : <br>        ($score &lt; <span class="hljs-number">90</span>) ? <span class="hljs-string">&quot;c&quot;</span> : <br>        <span class="hljs-string">&quot;d&quot;</span>;          <span class="hljs-comment"># 默认值</span><br><span class="hljs-keyword">say</span> $mark;<br></code></pre></td></tr></table></figure>
-<p>输出的结果：</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs stylus">$ perl test<span class="hljs-selector-class">.plx</span><br><span class="hljs-selector-tag">a</span><br>$ perl test<span class="hljs-selector-class">.plx</span> <span class="hljs-number">33</span><br><span class="hljs-selector-tag">a</span><br>$ perl test<span class="hljs-selector-class">.plx</span> <span class="hljs-number">63</span><br><span class="hljs-selector-tag">b</span><br>$ perl test<span class="hljs-selector-class">.plx</span> <span class="hljs-number">83</span><br>c<br>$ perl test<span class="hljs-selector-class">.plx</span> <span class="hljs-number">93</span><br>d<br></code></pre></td></tr></table></figure>
-<h4 id="and-操作符："><a href="#and-操作符：" class="headerlink" title="and 操作符："></a>and 操作符：</h4><p>用于连接两个行为，左边为真，就执行右边的操作。<br>$m &lt; $n and $m &#x3D; $n;   # 以$m的姿态取出$m和$n之间较大值<br>下面代码所表达的意思是一样的。</p>
-<figure class="highlight autoit"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs autoit"><span class="hljs-keyword">if</span> ($m&lt;$n)&#123;$m=$n&#125;<br>$m=$n <span class="hljs-keyword">if</span> $m&lt;$n<span class="hljs-comment">;</span><br>$m=($m &lt; $n) ? $n : $m<span class="hljs-comment">;</span><br></code></pre></td></tr></table></figure>
+
 
               
             </div>
@@ -335,8 +321,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>perl_for</div>
-      <div>http://example.com/2022/03/30/perl-for/</div>
+      <div>perl处理vcf文件</div>
+      <div>http://example.com/2022/04/02/perl处理vcf文件/</div>
     </div>
     <div class="license-meta">
       
@@ -348,7 +334,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>March 30, 2022</div>
+          <div>April 2, 2022</div>
         </div>
       
       
@@ -378,18 +364,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/04/02/perl%E5%A4%84%E7%90%86vcf%E6%96%87%E4%BB%B6/" title="perl处理vcf文件">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">perl处理vcf文件</span>
-                        <span class="visible-mobile">Previous</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/03/30/WGCNA/" title="WGCNA">
-                        <span class="hidden-mobile">WGCNA</span>
+                      <a href="/2022/03/30/perl-for/" title="perl_for">
+                        <span class="hidden-mobile">perl_for</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

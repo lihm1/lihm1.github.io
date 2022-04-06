@@ -25,7 +25,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/img/download3.jpg">
 <meta property="article:published_time" content="2022-03-29T07:23:35.000Z">
-<meta property="article:modified_time" content="2022-03-30T01:10:34.983Z">
+<meta property="article:modified_time" content="2022-04-06T04:04:57.894Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary_large_image">
@@ -212,7 +212,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.9k words
+          2.8k words
         
       </span>
     
@@ -292,21 +292,15 @@
 
 <h4 id="8-2文章在首页的封面图"><a href="#8-2文章在首页的封面图" class="headerlink" title="8.2文章在首页的封面图"></a>8.2文章在首页的封面图</h4><img src="/2022/03/29/hello-hexo/eight.png" srcset="/img/loading.gif" lazyload class="" title="This is an example image">
 <p>设置方式如下：在文章中加上index_img<br>并且将图片保存在&#x2F;themes&#x2F;fluid&#x2F;source&#x2F;img中,在文章中只需要指定在img中就可以。也可以使用外链 Url 的绝对路径。</p>
-<hr>
-<p>title: test<br>date: 2022-03-29 15:23:35<br>index_img: &#x2F;img&#x2F;download.jpg<br>tags:</p>
-<hr>
-<h4 id="8-3-文章顶部放大图："><a href="#8-3-文章顶部放大图：" class="headerlink" title="8.3 文章顶部放大图："></a>8.3 文章顶部放大图：</h4><h2 id="默认显示主题配置中的-post-banner-img，如需要设置单个文章的-Banner，在-文档中指定-banner-img-属性。图片仍然放置在-x2F-themes-x2F-fluid-x2F-source-x2F-img"><a href="#默认显示主题配置中的-post-banner-img，如需要设置单个文章的-Banner，在-文档中指定-banner-img-属性。图片仍然放置在-x2F-themes-x2F-fluid-x2F-source-x2F-img" class="headerlink" title="默认显示主题配置中的 post.banner_img，如需要设置单个文章的 Banner，在 文档中指定 banner_img 属性。图片仍然放置在&#x2F;themes&#x2F;fluid&#x2F;source&#x2F;img"></a>默认显示主题配置中的 post.banner_img，如需要设置单个文章的 Banner，在 文档中指定 banner_img 属性。图片仍然放置在&#x2F;themes&#x2F;fluid&#x2F;source&#x2F;img</h2><p>title: 文章标题<br>tags: [Hexo, Fluid]<br>index_img: &#x2F;img&#x2F;example.jpg<br>banner_img: &#x2F;img&#x2F;post_banner.jpg<br>date: 2019-10-10 10:00:00</p>
-<hr>
-<h4 id="8-4-添加tag-categories"><a href="#8-4-添加tag-categories" class="headerlink" title="8.4 添加tag  categories"></a>8.4 添加tag  categories</h4><p>title: test<br>date: 2022-03-29 15:23:35<br>index_img: &#x2F;img&#x2F;download.jpg<br>banner_img: &#x2F;img&#x2F;download.jpg<br>categories:</p>
-<ul>
-<li>bioinformation<br>tags:</li>
-<li>software</li>
-</ul>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">test</span><br><span class="hljs-attr">date:</span> <span class="hljs-number">2022-03-29 15:23:35</span><br><span class="hljs-attr">index_img:</span> <span class="hljs-string">/img/download.jpg</span> <br><span class="hljs-attr">tags:</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure>
+<h4 id="8-3-文章顶部放大图："><a href="#8-3-文章顶部放大图：" class="headerlink" title="8.3 文章顶部放大图："></a>8.3 文章顶部放大图：</h4><p>默认显示主题配置中的 post.banner_img，如需要设置单个文章的 Banner，在 文档中指定 banner_img 属性。图片仍然放置在&#x2F;themes&#x2F;fluid&#x2F;source&#x2F;img</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">文章标题</span><br><span class="hljs-attr">tags:</span> [<span class="hljs-string">Hexo</span>, <span class="hljs-string">Fluid</span>]<br><span class="hljs-attr">index_img:</span> <span class="hljs-string">/img/example.jpg</span><br><span class="hljs-attr">banner_img:</span> <span class="hljs-string">/img/post_banner.jpg</span><br><span class="hljs-attr">date:</span> <span class="hljs-number">2019-10-10 10:00:00</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure>
+<h4 id="8-4-添加tag-categories"><a href="#8-4-添加tag-categories" class="headerlink" title="8.4 添加tag  categories"></a>8.4 添加tag  categories</h4><figure class="highlight subunit"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs subunit">title: test<br>date: 2022<span class="hljs-string">-03</span><span class="hljs-string">-29</span> 15:23:35<br>index_img: /img/download.jpg <br>banner_img: /img/download.jpg <br>categories:<br>- bioinformation<br><span class="hljs-keyword">tags:</span><br>- software<br></code></pre></td></tr></table></figure>
 <h3 id="9-博客与git-hub-链接，并且发布到GitHub上"><a href="#9-博客与git-hub-链接，并且发布到GitHub上" class="headerlink" title="9.博客与git hub 链接，并且发布到GitHub上"></a>9.博客与git hub 链接，并且发布到GitHub上</h3><p>创建自己的GitHub账号，登陆后新建仓库命名为lihm1.github.io<br>在仓库中新建文件index.html，里面随便写点内容，<br>然后打开上方的setting,找到pages，我们可以看到自己的网址</p>
 <img src="/2022/03/29/hello-hexo/nine.png" srcset="/img/loading.gif" lazyload class="" title="This is an example image">
 <p>发布到GitHub添加自己的github的地址以及自己的博客存在什么分支<br>安装hexo-deployer-git<br>npm install hexo-deployer-git –save<br>修改_config.yml的内容为自己的GitHub地址<br>deploy:<br>  type: git<br>  repository: <a target="_blank" rel="noopener" href="https://github.com/lihm1/lihm1.github.io.git">https://github.com/lihm1/lihm1.github.io.git</a><br>  branch: master</p>
 <p>将内容更新后上传到github<br>hexo g<br>hexo d<br>会弹出页面让登录github并且输入密码。我们再次打开自己的github就可以看到自己的仓库已经被更新。</p>
-<h3 id="10-博客源代码的保留"><a href="#10-博客源代码的保留" class="headerlink" title="10.博客源代码的保留"></a>10.博客源代码的保留</h3><p>github创建一个分支，将自己的源码保存在分支中，以后换电脑想要更新博客的时候可以使用。<br>我们可以先将github上的博客的仓库克隆下来<br>git clone <a href="mailto:&#103;&#105;&#x74;&#x40;&#x67;&#x69;&#116;&#x68;&#117;&#x62;&#46;&#x63;&#x6f;&#109;">&#103;&#105;&#x74;&#x40;&#x67;&#x69;&#116;&#x68;&#117;&#x62;&#46;&#x63;&#x6f;&#109;</a>:lihm1&#x2F;lihm1.github.io.git<br>进入本地的lihm1.github.io.git文件夹，创建分支source<br>git branch source<br>git branch<br>切换到分支source<br>git checkout source<br>我们可以在本地先把lihm1.github.io.git 文件全部删掉，然后将开始新建的blog文件夹的内容复制过来。后面将修改内容以及创建的分支push 到远程仓库。<br>git add .<br>git commit -m “hexo”<br>git push orgin source:source<br>后面如果换电脑，我们可以先从github上面clone下来source分支仓库，最好设置source为默认的仓库，在setting里面可以设置。这样code的代码就是source的。<br>下载下来后我们需要，然后安装、初始化hexo，重新设置hexo环境。</p>
+<h3 id="10-博客源代码的保留"><a href="#10-博客源代码的保留" class="headerlink" title="10.博客源代码的保留"></a>10.博客源代码的保留</h3><p>github创建一个分支，将自己的源码保存在分支中，以后换电脑想要更新博客的时候可以使用。<br>我们可以先将github上的博客的仓库克隆下来<br>git clone <a href="mailto:&#x67;&#105;&#x74;&#64;&#103;&#x69;&#x74;&#104;&#117;&#98;&#x2e;&#99;&#x6f;&#x6d;">&#x67;&#105;&#x74;&#64;&#103;&#x69;&#x74;&#104;&#117;&#98;&#x2e;&#99;&#x6f;&#x6d;</a>:lihm1&#x2F;lihm1.github.io.git<br>进入本地的lihm1.github.io.git文件夹，创建分支source<br>git branch source<br>git branch<br>切换到分支source<br>git checkout source<br>我们可以在本地先把lihm1.github.io.git 文件全部删掉，然后将开始新建的blog文件夹的内容复制过来。后面将修改内容以及创建的分支push 到远程仓库。<br>git add .<br>git commit -m “hexo”<br>git push orgin source:source<br>后面如果换电脑，我们可以先从github上面clone下来source分支仓库，最好设置source为默认的仓库，在setting里面可以设置。这样code的代码就是source的。<br>下载下来后我们需要，然后安装、初始化hexo，重新设置hexo环境。</p>
 <figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs cmake">npm <span class="hljs-keyword">install</span> hexo<br>npm <span class="hljs-keyword">install</span> hexo-deployer-git -save<br></code></pre></td></tr></table></figure>
 <p>然后hexo s,便可以看到自己的博客了，如果更新了内容并且想提交到github上，与原来是一样的操作参考9.发布到GitHub的内容。</p>
 

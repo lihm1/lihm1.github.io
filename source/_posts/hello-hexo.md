@@ -80,14 +80,18 @@ tags:
 {% asset_img eight.png This is an example image %}
 设置方式如下：在文章中加上index_img
 并且将图片保存在/themes/fluid/source/img中,在文章中只需要指定在img中就可以。也可以使用外链 Url 的绝对路径。
+~~~
 ---
 title: test
 date: 2022-03-29 15:23:35
 index_img: /img/download.jpg 
 tags:
 ---
- #### 8.3 文章顶部放大图：
+~~~
+#### 8.3 文章顶部放大图：
+
 默认显示主题配置中的 post.banner_img，如需要设置单个文章的 Banner，在 文档中指定 banner_img 属性。图片仍然放置在/themes/fluid/source/img
+~~~
 ---
 title: 文章标题
 tags: [Hexo, Fluid]
@@ -95,8 +99,9 @@ index_img: /img/example.jpg
 banner_img: /img/post_banner.jpg
 date: 2019-10-10 10:00:00
 ---
-
+~~~
  #### 8.4 添加tag  categories
+~~~
 title: test
 date: 2022-03-29 15:23:35
 index_img: /img/download.jpg 
@@ -105,7 +110,7 @@ categories:
 - bioinformation
 tags:
 - software
-
+~~~
 ### 9.博客与git hub 链接，并且发布到GitHub上
 创建自己的GitHub账号，登陆后新建仓库命名为lihm1.github.io
 在仓库中新建文件index.html，里面随便写点内容，

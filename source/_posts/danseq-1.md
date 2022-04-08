@@ -288,9 +288,6 @@ bcftools-1.9 norm \
 
 #####VEP annotation
 
-
-
-
 export PATH="/share/app/perl-5.22.0/bin:$PATH"
 export PERL5LIB="/share/app/vcftools-0.1.13/lib/perl5/site_perl:$PERL5LIB"
 VEP/v102/bin/vep \
